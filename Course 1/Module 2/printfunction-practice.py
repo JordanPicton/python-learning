@@ -49,3 +49,48 @@ print("I am a float =",0.82)
 print("This is an easier way to print numbers like =", 3e8)
 #The example above allows me to print the number out in an easier way than writing out all the other 0's.
 #Somethings to note are; the exponent (the value after the E) has to be an integer. And the base (the value in front of the E) may be an integer.
+
+#When giving Python a float literal doesn't mean that Python will also display it the same way as intended. This is because Python will shorten them down to be more of a mathimatical reading.
+print(6.62607E-34) #This is called Plancks Constant and is denoted as h. Python can sometimes just choose a different notation than what I'm expecting.
+#Below is a better example of this in action.
+print(0.0000000000000000000001) #Prints out 1e-22.
+#Python always chooses the more economical form of the numbers presentation.
+
+
+
+#Strings, I basically know what these are already and am unsure to why I'm going back to these but it's what the course is wanting. They used for things like names, addresses, novels etc, just not numbers.
+#Strings need quotes just like floats needing decimal points. Below is a typical string.
+print("I am a string.")
+
+#If I wanted to print something like the following: (I like "coding") this would issue an error because there's already quotes surrounding the text to make it a String. There are a few ways of doing this, below is showing off how it's done:
+#print(I like "coding") this would error.
+print("I like \"coding\"") #This uses the escape character being the backslash and then the quotes to show that there should be quotes here and not exit the String.
+print('I like "coding"') #Uses both single quotes to surround the apostraphe, doesn't need the escape character.
+
+#It's similar to do it the other way too with the apostraphe. Shown below:
+print("I'm called Jordan.")
+print('I\'m called Jordan.')
+
+#And finally strings can be empty with no value. "" and ''.
+
+#There are two more literals that I'll be learning which is basically true and false. These are the same for Java, they're called Booleans and they come in two falvours, True and False. It reminds me more of the binary factor, in the sense that 0 is off and 1 is on.
+#That's not how these booleans work but it just reminds me of this. Apparently for Python they represent an abstract value which is called truthfulness. So I believe this is because a computer can't say "Probably yes but I'm not really sure."
+#Unlike some other things I've learned, these cannot have different values in the sense of it has to be either True or False and not true or false. These are symbols which is interesting and they have case-sensitivity.
+print(True > False)
+print(True < False)
+#When running the snippet of code above it gives and interesting read out. For the first one it's basically True is greater than False so print out True. And the second one is True is less than False so print out False, I'm assuming the one that has a higher value
+#at the end of the line of code that's the one that gets printed.
+
+#And now I'm going to test myself in doing some print functions using strings. I need to write one line of code, as well as the newline and escape characters to match the expected result below. And I will say if I completed this within the 5-10 minutes.
+#"I'm"
+#""learning""
+#"""Python"""
+print('"I\'m"','\"\"Learning\"\"','"\"\"Python\"\""',sep="\n")
+#This took me a little longer to figure out because I was initially setting the next line escape chacter and realised there was a white space at the beginning and then remembered I could use the sep argument. It didn't take me that long to write either, it was
+#around 4-5 minutes.
+
+
+#Some key take aways from this module.
+#There is another literal value that I haven't looked at yet, it's called the None literal. This literal is a so-called NoneType object, it's used to basically show the absence of a value.
+
+# https://edube.org/learn/pe-1/section-summary-73
