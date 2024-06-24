@@ -1,5 +1,5 @@
 # Defining Variables
-loop = 0 # Sets loop to have the value of 0.
+loop = 0 # Sets loop to have the value of 0. This is used for a counter.
 
 # User Input
 userInput =  int(input("Enter the times table you'd like to see: ")) # Retrieves a value from the user.
