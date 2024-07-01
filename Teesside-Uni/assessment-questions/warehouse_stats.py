@@ -20,7 +20,7 @@ deliveries.append(float(input("Please insert your deliveries weight: "))) # Adds
 # Meaning that the user can input new values for each delivery to a new position within the array/list.
 while loop < deliveryNum - 1: # Because the array starts at 0 I need to negate 1 value from the delivery num.
   deliveries.append(float(input("Please insert your next deliveries weight: "))) # Add a new value to the deliveries array. (Casts the input to a Float value)
-  loop = loop + 1 # Adds one value to the loop variable. (Increment)
+  loop += 1 # Adds one value to the loop variable. (Increment)
   #print(deliveries) # Gives a nice print out of the deliveries array, mainly used for testing.
 
 average = str(statistics.fmean(deliveries)) # Stores the average value of the deliveries array/list. (Casts the input to a String value)
@@ -34,4 +34,11 @@ minimum = str(min(deliveries)) # Stores the minimum value of the deliveries arra
 
 # Print out for the different arithemtic values for the deliveries array/list. Casts deliveryNum to a String data type to allow for it to be used with the + symbol (Concatenation).
 # Also I've used the "\n" special character to shift the different values to the next line, whilst also setting the default separator to be nothing, not even white space.
-print("Delivery Statistics\n", "------------------\n", "Deliveries: ", str(deliveryNum) + "\n", "Average Weight: ", average + "\n", "Highest Weight: ", maximum + "\n", "Lowest Weight: ", minimum + "\n", "Median Weight: ", median + "\n", "------------------", sep="")
+print("Delivery Statistics")
+print("------------------")
+print("Deliveries:", str(deliveryNum).rjust(8)) # Uses .rjust method to space out the values to look cleaner in the print statement.
+print("Average Weight:", average.rjust(5))
+print("Highest Weight:", maximum.rjust(5))
+print("Lowest Weight:", minimum.rjust(6))
+print("Median Weight:", median.rjust(6))
+print("------------------")
