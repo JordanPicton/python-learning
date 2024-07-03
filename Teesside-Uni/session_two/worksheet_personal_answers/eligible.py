@@ -1,4 +1,4 @@
-# Simple Comparison Program
+# Eligible Program
 # Jordan Picton 03/07/2024
 
 # Delcaring variables.
