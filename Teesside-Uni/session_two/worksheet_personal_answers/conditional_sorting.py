@@ -8,54 +8,20 @@
 
 flag = True
 
-# Nested IF Program.
+# Declare variables
+numList = []  # Creating a new empty list.
+
+numOneList = input(
+    "Please insert your third number or 'exit' to quit the program: ")
+
 while flag:
-
-    # Takes user input to give the variable a value.
-    numTwoIF = input(
-        "Please insert your second number or 'exit' to quit the program: ")
-
-    if numOneIF == "quit" or numTwoIF == "quit":
+      # Takes user input to give the variable a value.
+      numOne = input("Please insert your first number or 'exit' to quit the program: ")
+      # Checks if the value of
+      if numOne == "exit":
         flag = False
-    else:
-        # Takes user input to give the variable a value.
-        numThreeIF = input(
-            "Please insert your third number or 'exit' to quit the program: ")
-
-        if numThreeIF == "quit":
-            flag = False
-        else:
-            numOneIF = int(numOneIF)
-            numTwoIF = int(numTwoIF)
-            numThreeIF = int(numThreeIF)
-
-            # Comparing the Numbers
-            if numOneIF > numTwoIF:
-                if numOneIF > numThreeIF:
-                    print("Wrong1")
-                else:
-                    print("Wrong2")
-            else:
-                print("Wrong3")
-
-
-# List Program.
-
-    # Declare variables
-    numList = []
-    numOneList = input(
-        "Please insert your first number or 'exit' to quit the program: ")
-    numOneList = input(
-        "Please insert your second number or 'exit' to quit the program: ")
-    numOneList = input(
-        "Please insert your third number or 'exit' to quit the program: ")
-
-    while flag:
-        # Takes user input to give the variable a value.
-        numOneList = input(
-            "Please insert your first number or 'exit' to quit the program: ")
-        if numOneList == "quit":
-            flag = False
-        else:
-            numList.append(int(numOneList))  # Adds the value from
-        print(numList)
+      else:
+        numList.append(int(numOne))# Adds the value from numOneList into the numList list.
+        numTwo = input("Please insert your second number or 'exit' to quit the program: ")
+        if numTwo == "exit":
+          print(numList)
