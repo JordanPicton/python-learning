@@ -8,5 +8,5 @@ print("Welcome to Module 2 Basics")
 print("Hello, Python!")
 print("Jordan")
 
-# Signature
+# Signature (A small showcase of the print command)
 print("Author: Jordan Picton  -  Date: 31/03/2023")
