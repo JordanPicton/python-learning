@@ -65,7 +65,7 @@ print("I am a string.")
 #If I wanted to print something like the following: (I like "coding") this would issue an error because there's already quotes surrounding the text to make it a String. There are a few ways of doing this, below is showing off how it's done:
 #print(I like "coding") this would error.
 print("I like \"coding\"") #This uses the escape character being the backslash and then the quotes to show that there should be quotes here and not exit the String.
-print('I like "coding"') #Uses both single quotes to surround the apostraphe, doesn't need the escape character.
+print('I like "coding"') #Uses both single quotes to surround the apostraphe, doesn't need the escape character. (Does the same as above basically)
 
 #It's similar to do it the other way too with the apostraphe. Shown below:
 print("I'm called Jordan.")
